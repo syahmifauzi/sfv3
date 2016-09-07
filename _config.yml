@@ -8,7 +8,7 @@ description: > # Multiline description..
 
 # Uncomment 'baseurl' and 'url' when deploy..
 # baseurl: ""
-url: "http://www.syahmifauzi.com"
+# url: "http://www.syahmifauzi.com"
 local: "http://localhost:3000"
 
 facebook_username: syahmifauzi97
