@@ -1,0 +1,174 @@
+#contactMe {
+  font-size: 1.2em;
+  background: {
+    image: url('/assets/img/me-bg-cm.jpg');
+    position: center center;
+    size: cover;
+    repeat: no-repeat;
+  }
+  background-color: #333;
+  background-blend-mode: screen;
+
+  width: 100%;
+  min-height: 800px;
+  height: 100%;
+  // height: 100vh;
+  min-height: 100vh;
+  line-height: 1.5;
+  padding-bottom: 20px;
+  h1 {
+    margin: 0;
+    padding-top: 80px;
+    margin-left: $content-margin-left + 30px;
+    @media all and (max-width: $small-breakpoint-width) {
+      padding-top: 20px;
+      margin-left: $content-margin-left;
+    }
+  }
+  .first, .second {
+    margin-left: $content-margin-left + 80px;
+    @media all and (max-width: $small-breakpoint-width)
+      {margin-left: $content-margin-left + 50px;}
+    &.first::before {
+      content: "";
+      margin-left: -25px;
+    }
+  }
+}
+
+
+#contactForm {
+  // background-color: pink;
+  padding: 10px;
+  max-width: 50%;
+  margin-left: $content-margin-left + 30px;
+  @media all and (max-width: $small-breakpoint-width) {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .name, .phone, .email, .message {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  .name, .phone {
+    width: 49%;
+    float: left;
+  }
+  .name {margin-right: 1%;}
+  .phone {margin-left: 1%;}
+  .submit {
+    width: 30%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: #fff;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      color: #fff;
+      background-color: #3498db;
+    }
+  }
+  @media all and (max-width: $small-breakpoint-width) {
+    .name, .phone, .email, .message {
+      float: none;
+      width: 100%;
+      margin: 5px 0;
+      padding: 5px 10px;
+    }
+    .submit {width: 50%;}
+  }
+  .message {
+    min-height: 100px;
+    height: auto;
+  }
+}
+
+#contactMe {
+  position: relative;
+  .social-medias {
+    .fa-instagram {color: #e95950;}
+    .fa-facebook-square {color: #3b5998;}
+    .fa-twitter-square {color: #55acee;}
+    .fa-github-square {color: #000;}
+    a {
+      font-size: 2em;
+      text-decoration: none;
+      transition: all 125ms ease-in-out;
+      &:hover {transform: scale(1.3);}
+    }
+    position: absolute;
+    top: 0; right: 20px;
+    margin-top: 90px;
+    margin-right: 10px;
+    a {
+      display: block;
+      margin-bottom: 10px;
+      position: relative;
+      span {
+        display: none;
+        position: absolute;
+        font-size: 0.5em;
+      }
+      &:hover span {
+        display: inline;
+        right: 110%; top: 25%;
+      }
+    }
+    a, span {
+      text-shadow: 0px 0px 15px #fff;
+    }
+    @media all and (max-width: $small-breakpoint-width) {
+        text-align: center;
+        position: static;
+        margin: 10px;
+        a {
+          display: inline-block;
+          margin: 10px;
+          span {position: absolute;}
+          &:hover span {
+            display: block;
+            right: auto; top: 110%;
+          }
+        }
+    }
+  }
+}
+
+
+
+#submitted {
+  display: none;
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-color: $bg-color;
+  z-index: 7;
+  text-align: center;
+  h2 {
+    padding: 10px 20px;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 400px;
+    .close {
+      color: #3498db;
+      background-color: $bg-color;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 50px;
+      padding: 0 5px;
+      font-size: 2em;
+      margin: 10px auto;
+      display: block;
+      transition: all 125ms ease-in-out;
+      &:hover {
+        color: $bg-color;
+        background-color: #3498db;
+      }
+    }
+  }
+}

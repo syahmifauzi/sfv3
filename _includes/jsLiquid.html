@@ -1,0 +1,21 @@
+{% if page.url != '/' %}
+  <script>
+    $(document).keydown(function(e){
+      if (e.keyCode == 37) {
+        window.location.href = "{{ page.next.url }}";
+        return false;
+      }
+      if (e.keyCode == 39) {
+        window.location.href = "{{ page.previous.url }}";
+        return false;
+      }
+    });
+  </script>
+{% endif %}
+{% if page.url == '/' %}
+  <script>
+    if (window.location.href === '{% if site.url %}{{ site.url }}{% else %}{{ site.local }}{% endif %}/#submitted') {
+      $('#submitted').fadeIn();
+    }
+  </script>
+{% endif %}

@@ -1,0 +1,22 @@
+# Site settings
+title: SYAHMI FAUZI .COM @ SF
+email: brosyahmifauzi.gmail.com
+description: > # Multiline description..
+  Syahmi is a self-taught front-end web developer
+  from Malaysia.. This is his personal website..
+  Also, a blog..
+
+# Uncomment 'baseurl' and 'url' when deploy..
+# baseurl: ""
+url: "http://www.syahmifauzi.com"
+local: "http://localhost:3000"
+
+facebook_username: syahmifauzi97
+instagram_username: _syahmifauzi
+twitter_username: _syahmifauzi
+github_username: syahmifauzi
+
+# Build settings..
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/ # just pretty
+exclude: ["node_modules", "gulpfile.js", "package.json", "README.md", "offline.txt"]

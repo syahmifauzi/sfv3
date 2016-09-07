@@ -1,0 +1,54 @@
+// VARIABLES
+$primary-font-family: "Source Sans Pro", "Helvetica", sans-serif;
+$secondary-font-family: "Amatic SC", "Helvetica", sans-serif;
+$primary-font-color: #333;
+$bg-color: #f1f1f1;
+$box-bg-color: #fefefe;
+$nav-link-color-unhover: #333;
+$nav-link-color-hover: #fff;
+
+// Breakpoints
+  // width
+$x-large-breakpoint-width: 1442px;  // width > 1442px
+$large-breakpoint-width: 1024px;    // 1024px <= width < 1442px
+$medium-breakpoint-width: 800px;    // 800px <= width < 1024px
+$small-breakpoint-width: 640px;     // 320px <= width < 800px
+$x-small-breakpoint-width: 320px;   // width < 320px
+  // height
+$small-breakpoint-height: 500px;
+$x-small-breakpoint-width: 298px;
+
+
+$content-margin-left: 50px;
+
+// SF-BASES
+body {
+  font-family: $primary-font-family;
+  color: $primary-font-color;
+  background-color: $bg-color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  @media all and (max-width: $x-small-breakpoint-width)
+    {font-size: 14px;}
+  @media all and (min-width: $x-small-breakpoint-width) and (max-width: $small-breakpoint-width)
+    {font-size: 15px;}
+  @media all and (min-width: $small-breakpoint-width) and (max-width: $medium-breakpoint-width)
+    {font-size: 16px;}
+  @media all and (min-width: $medium-breakpoint-width) and (max-width: $large-breakpoint-width)
+    {font-size: 17px;}
+  @media all and (min-width: $large-breakpoint-width) and (max-width: $x-large-breakpoint-width)
+    {font-size: 18px;}
+  @media all and (min-width: $x-large-breakpoint-width)
+    {font-size: 19px;}
+}
+.sf-homepage-wrapper {
+  // Nothing..
+}
+.sf-post-wrapper {
+  text-transform: none;
+}
+
+.product-img {
+  display: none; // for lazyload..
+}

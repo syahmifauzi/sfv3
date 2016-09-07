@@ -1,0 +1,34 @@
+#footer {
+  color: #fff;
+  background-color: #464646;
+  text-align: center;
+  .link, .dev, .copy {
+    padding: 30px 10px;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+  }
+  .link, .dev {padding-top: 50px;}
+  .copy {padding-top: 15px; width: 100%;}
+  i.fa-heart {color: #ff1944;}
+  span {
+    color: #3dadf9;
+    cursor: pointer;
+  }
+  br {clear: both;}
+  hr {display: none;}
+  @media all and (max-width: $small-breakpoint-width) {
+    .link, .dev, .copy {
+      float: none;
+      width: 100%;
+      padding: 10px 20px;
+    }
+    .link {padding-top: 30px;}
+    .copy {padding-bottom: 10px;}
+    hr {
+      display: block;
+      width: 90%;
+    	border: 1px dashed #8c8b8b;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+// LAYOUTS
+#aboutMe {
+  width: 100%;
+  min-height: 400px;
+  max-height: 900px;
+  height: 100%;
+  min-height: 50vh;
+  h1 {
+    // font-size: 1.1em;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+#aboutMe { // vertical centering
+  z-index: -1;
+  padding-top: 80px;
+  @media all and (max-width: $small-breakpoint-width) {
+    padding-top: 20px;
+  }
+  .aboutMe {
+    margin-left: $content-margin-left + 30px;
+    max-width: 50%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    @media all and (max-width: $small-breakpoint-width) {
+      margin-left: $content-margin-left;
+      max-width: 70%;
+    }
+  }
+}
+
+
+// MODULES
+#aboutMe {
+  background: {
+    image: url('/assets/img/me-bg-l.jpg');
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  }
+  background-color: #333;
+  background-blend-mode: screen;
+  .aboutMe {
+    p span {
+      cursor: pointer;
+      opacity: 0.7;
+      text-shadow: 2px 2px 3px;
+      color: #9b59b6;
+      &:first-child {color: #9b59b6;}
+      &:nth-child(2) {color: #028cf6;}
+      &:nth-child(3) {color: #00cc00;}
+      &:last-child {color: #ff1944;}
+      &:hover {opacity: 1;}
+    }
+  }
+}
+
+#aboutMe {
+  font-size: 1.1em;
+  .aboutMe {
+    text-align: left;
+    // line-height: 1.8;
+  }
+  p {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff; // fallback
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #555;
+    @media all and (max-width: $small-breakpoint-width) {
+      padding: 5px 10px;
+    }
+  }
+}

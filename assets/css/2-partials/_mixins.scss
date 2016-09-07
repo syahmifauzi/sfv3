@@ -1,0 +1,26 @@
+@mixin hideText {
+  /* Hide the text.. */
+  text-indent: 201%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin logoBg($logoURL) {
+  background: {
+    image: url($logoURL);
+    size: contain;
+    repeat: no-repeat;
+    position: center center;
+  }
+}
+
+
+@mixin mediaMediumWidth($fontSize) {
+  @media all and (max-width: $medium-breakpoint-width)
+    {font-size: $fontSize}
+}
+
+@mixin mediaSmallWidth($fontSize) {
+  @media all and (max-width: $small-breakpoint-width)
+    {font-size: $fontSize}
+}

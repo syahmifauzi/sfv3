@@ -1,0 +1,28 @@
+
+<div id="contactMe">
+  <h1>Contact Me</h1>
+  <div class="first"> <i class="fa fa-hand-o-right"></i> Keep in touch with me..</div>
+  <div class="second">Through email, twitter, github, etc²..</div>
+  <div class="contact-form">
+    <form method="POST" id="contactForm">
+      <input type="hidden" name="_format" value="plain"/>
+      <input type="hidden" name="_subject" value="Syahmi's Website"/>
+      <input type="text" name="name" placeholder="Full Name*" required="required" class="name"/>
+      <input type="text" name="phone" placeholder="Phone" class="phone"/>
+      <input type="email" name="_replyto" placeholder="E-mail*" required="required" class="email"/>
+      <input type="text" name="_gotcha" style="display:none;"/>
+      <input type="hidden" name="_next" value="{% if site.url %}{{ site.url }}{% else %}{{ site.local }}{% endif %}/#submitted"/>
+      <textarea name="message" form="contactForm" placeholder="Your Message..*" required="required" class="message"></textarea>
+      <input type="submit" value="Send" class="submit"/>
+    </form>
+    <script>
+      var contactForm = document.getElementById('contactForm');
+      contactForm.setAttribute('action', '//formspree.io/' + 'brosyahmifauzi' + '@' + 'gmail' + '.' + 'com');
+    </script>
+    <div id="submitted">
+      <h2>Your Message Has Been Submitted.. Thank You For Contacting Me.. :)<a href="{% if site.url %}{{ site.url }}{% else %}{{ site.local }}{% endif %}" class="fa fa-close close"></a></h2>
+    </div>
+  </div>
+  <div class="social-medias"><a href="https://www.instagram.com/_syahmifauzi" target="_blank" class="fa fa-instagram"><span> Instagtam</span></a><a href="https://www.facebook.com/syahmifauzi97" target="_blank" class="fa fa-facebook-square"><span> Facebook</span></a><a href="https://twitter.com/_syahmifauzi" target="_blank" class="fa fa-twitter-square"><span> Twitter</span></a><a href="https://github.com/syahmifauzi" target="_blank" class="fa fa-github-square"><span> GitHub</span></a>
+  </div>
+</div>
