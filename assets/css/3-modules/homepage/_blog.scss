@@ -33,6 +33,15 @@
   .fa-heartbeat {
     color: #ff1944;
     font-size: 1.3em;
+    @media all and (max-width: $small-breakpoint-width)
+      {display: none;}
+  }
+  .heart {
+    color: #ff1944;
+    font-size: 1.7em;
+    display: none;
+    @media all and (max-width: $small-breakpoint-width)
+      {display: inline;}
   }
 
   .blog-wrapper {

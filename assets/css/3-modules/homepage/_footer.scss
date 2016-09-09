@@ -10,7 +10,10 @@
   }
   .link, .dev {padding-top: 50px;}
   .copy {padding-top: 15px; width: 100%;}
-  i.fa-heart {color: #ff1944;}
+  i.heart {
+    color: #ff1944;
+    font-size: 1.5em;
+  }
   span {
     color: #3dadf9;
     cursor: pointer;
