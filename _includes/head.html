@@ -1,18 +1,18 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="author" content="Syahmi Fauzi">
-    <meta name="keywords" content="syahmifauzi, syahmi, syami, syhmi, fauzi, frontend, portfolio, msf, msfaf, msfworks">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="keywords" content="{{ site.keywords }}">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="shortcut icon" href="{{"/favicon.ico" | prepend: site.url }}">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="canonical" href="{{ page.url|absolute_url }}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt|strip_html|strip_newlines|truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="shortcut icon" href="{{"/favicon.ico"|absolute_url }}">
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/vendors.css" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/app.css" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/vendors.css"|absolute_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/app.css"|absolute_url }}">
 
-    <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
-
+    <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml"|absolute_url }}"> -->
+    {% seo %}
     {% include google-analytics.html %}

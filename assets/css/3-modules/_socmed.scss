@@ -1,0 +1,22 @@
+.sf-socmed {
+    a {
+        text-decoration: none;
+        color: #aaa;
+        margin: 0 5px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: #666;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-xs-width) {
+    .sf-socmed {
+        // display: block;
+    }
+}

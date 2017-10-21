@@ -1,0 +1,25 @@
+mixin social-media(socmed, username)
+    a(href="https://#{socmed}.com/#{username}" target="_blank")
+        i(class="fa fa-#{socmed}" aria-hidden="true")
+    
+
+header#sf-header
+    .sf-brand
+        span.sf-socmed
+            +social-media("twitter", "{{ site.twitter_username }}")
+            +social-media("instagram", "{{ site.instagram_username }}")
+            +social-media("facebook", "{{ site.facebook_username }}")
+        .sf-img: a(href="/"): img(src="/assets/img/sf-img.jpg" alt="SF")
+        span.sf-socmed
+            +social-media("github", "{{ site.github_username }}")
+            a(href="mailto:{{ site.email }}")
+                i(class="fa fa-envelope-o" aria-hidden="true")
+            a(href="https://my.linkedin.com/in/syahmi-fauzi-39b59710b" target="_blank")
+                i(class="fa fa-linkedin" aria-hidden="true")
+        .sf-author Syahmi Fauzi
+        .sf-id &commat;brosyhmi
+    .sf-nav
+        ul
+            li: a(href="/" class="{% if page.url == '/' %}is-active{% endif %}") Portfolio
+            li: a(href="/blog" class="{% if page.url contains '/blog/' %}is-active{% endif %}") Blog
+            li: a(href="/about" class="{% if page.url == '/about/' %}is-active{% endif %}") About

@@ -1,19 +1,22 @@
 ---
 layout: default
+title: Portfolio
+introduction: "These are some of my previous working projects. For now, most of it are coded from scratch and developed using Jekyll (Static Site Generator) and only eSiyahah using GravCMS (Flat-File CMS). Awesome!"
+permalink: /
 ---
 
-<div class="sf-homepage-wrapper">
-
-  {% include homepage/header.html %}
-
-  <div id="sf-content">
-
-    {% include homepage/aboutMe.html %}
-    {% include homepage/portfolio.html %}
-    {% include homepage/blog.html %}
-    {% include homepage/contactMe.html %}
-    {% include homepage/footer.html %}
-
-  </div>
-
+<div class="portfolio">
+    {% for project in site.data.projects %}
+        <div class="project">
+            <div class="project-title">
+                <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
+            </div>
+            <div class="project-description">
+                {{ project.description }}
+            </div>
+            <div class="project-img">
+                <img src="/assets/img/projects/{{ project.img }}" alt="{{ project.img|remove: ".png" }}">
+            </div>
+        </div>
+    {% endfor %}
 </div>

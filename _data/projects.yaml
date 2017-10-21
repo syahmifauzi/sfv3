@@ -1,0 +1,35 @@
+-
+    title: eSiyahah
+    description: "My favourite project, eSiyahah, an e-learning Arabic language website. Made using GravCMS."
+    img: esiyahah.png
+    url: http://esiyahah.com/
+-
+    title: Arabic G142
+    description: "Also Arabic project while learning Jade (now called Pug), a HTML Preprocessor."
+    img: arabic.png
+    url: http://www.syahmifauzi.com/arabic/
+-
+    title: ICTedu
+    description: "Using Bootstrap Framework with Jekyll for my group assignment for ICT."
+    img: ictedu.png
+    url: http://ictedu.github.io/
+-
+    title: Entrec Club
+    description: "Landing Page Design for Jekyll Theme. I really love it."
+    img: entrec.png
+    url: http://www.syahmifauzi.com/entrec/
+-
+    title: Syahmi Fauzi v1.0
+    description: "My First Personal Website Design."
+    img: sfv1.png
+    url: http://www.syahmifauzi.com/sfv1/
+-
+    title: Syahmi Fauzi v2.0
+    description: "My Second Personal Website Design."
+    img: sfv2.png
+    url: http://www.syahmifauzi.com/sfv2/
+-
+    title: Syahmi Fauzi v3.0
+    description: "Yes! This Website. I call it Version 3.0 and I love it!"
+    img: sfv3.png
+    url: http://www.syahmifauzi.com/

@@ -1,9 +1,7 @@
 ---
 title: "A Starter Project Using GulpJS"
 layout: post
-image: gulpjs.jpg
 comments: true
-comments_id: "starter-project-gulpjs"
 ---
 
 ## System Preparation
@@ -30,9 +28,7 @@ This will run:
 _**Production Mode**_   
 In console, run: `$ gulp build`
 
-This will:
-
-1. Build your production files such as html, css, js n others inside 'dist/' folder..   
+This will build your production files such as html, css, js n others inside 'dist/' folder..   
 
 If you found an error in console when building for production,    
 try run `$ gulp clean` before `$ gulp build`
@@ -68,7 +64,7 @@ Run `$ gulp build` in console for distribution..
 All files for distribution will be build in 'dist/' folder..
 CSS &amp; JS files will be minified..
 
-![Description](/assets/img/blogpost/anime.gif)
+![Description](/assets/img/blogposts/anime.gif)
 
 *Sorry, I'm newbie, trying to Gulp but end up writing ugly code.. Urgh!*   
 *You may playing with code inside gulpfile.js as you wish..*

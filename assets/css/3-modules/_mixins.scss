@@ -1,0 +1,9 @@
+@mixin center-div($widthMax) {
+    max-width: $widthMax;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    clear: both;
+}

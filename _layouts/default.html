@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
+<html class="no-js" lang="en">
+    <head>
 
-    {% include head.html %}
+        {% include head.html %}
 
-  </head>
-  <body>
+    </head>
+    <body>
+        <div id="sf-wrapper">
+            {% include header.html %}
+            <hr class="sf-hr">
 
-    {{ content }}
+            <div id="sf-content">
+                <h1 class="sf-title">{{ page.title }}</h1>
+                {% if page.introduction %}<p class="sf-introduction">{{ page.introduction }}</p>{% endif %}
+                {{ content }}
+            </div>
 
-    <noscript>Please enable JavaScript!</noscript>
-    <script src="{{ "/assets/js/vendors.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-    <script src="{{ "/assets/js/app.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-    {% include jsLiquid.html %}
-  </body>
+            <hr class="sf-hr">
+            <!-- include disquss if blogpost -->
+            {% include footer.html %}
+        </div>
+        <noscript>Please enable JavaScript!</noscript>
+        <script src="{{ "/assets/js/jquery-3.2.1.min.js" | absolute_url }}"></script>
+        <script src="{{ "/assets/js/app.js" | absolute_url }}"></script>
+    </body>
 </html>

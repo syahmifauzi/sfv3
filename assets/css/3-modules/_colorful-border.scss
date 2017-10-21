@@ -1,0 +1,11 @@
+#sf-header, #sf-footer {
+    position: relative;
+    &:before {
+        background: linear-gradient(to right, #e74c3c 0%, #c0392b 25%, #2ecc71 25%, #27ae60 50%, #3498db 50%, #2980b9 75%, #f1c40f 75%, #f39c12 100%);
+        position: absolute;
+        content: '';
+        height: 3px;
+        right: 0;
+        left: 0;
+    }
+}

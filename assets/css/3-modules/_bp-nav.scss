@@ -1,0 +1,26 @@
+.blogpost {
+    .bp-nav {
+        text-align: center;
+        font-weight: bold;
+        font-family: $primary-font;
+        li {
+          list-style: none;
+          display: inline-block;
+          text-align: left;
+          margin-right: 15px;
+          &:last-child {margin-right: 0;}
+        }
+        a {
+          display: block;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          color: #3498db;
+          transition: all 125ms ease-in-out;
+          &:hover {
+              background-color: $base-color;
+              color: #fff;
+          }
+        }
+    }
+}

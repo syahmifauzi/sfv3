@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+introduction: "These are some posts I wrote with &hearts; Let’s read it together.."
+permalink: /blog/
+---
+
+<ul class="blog">
+    {% for post in site.posts %}
+        <li>
+            <span class="post-meta">&raquo; {{ post.date|date: "%b %-d, %Y" }}</span>
+            <h2 class="post-link">
+                <a href="{{ post.url }}">{{ post.title|e }}</a>
+            </h2>
+        </li>
+    {% endfor %}
+</ul>

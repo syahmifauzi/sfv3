@@ -1,11 +1,12 @@
-@import "homepage/header";
-@import "homepage/aboutMe";
-@import "homepage/portfolio";
-@import "homepage/blog";
-@import "homepage/contactMe";
-@import "homepage/footer";
-
-@import "blog/header";
-@import "blog/post";
-
-@import "page404";
+@import "mixins";
+@import "socmed";
+@import "sf-hr";
+@import "colorful-border";
+@import "page-header";
+@import "portfolio";
+@import "blog";
+@import "blogpost";
+@import "bp-nav";
+@import "disqus";
+@import "about";
+@import "404";

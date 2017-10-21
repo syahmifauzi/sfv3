@@ -2,19 +2,11 @@
 layout: default
 ---
 
-<div class="sf-post-wrapper">
-
-  <div class="bg-top-wrapper"{% if page.image %} style="background-image: url('/assets/img/blogpost/{{ page.image }}');"{% endif %}></div>
-
-  <div class="inner-wrapper">
-    <div class="header-wrapper">
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.date | date_to_string }}</p>
-    </div>
-    <div class="content-wrapper">
-      {{ content }}
-    </div>
-    <div class="post-nav-wrapper">
+<div class="blogpost">
+    <p class="bp-meta">{{ page.date | date_to_string }}</p>
+    {{ content }}
+    <!-- post nav -->
+    <div class="bp-nav">
       {% if page.next %}
       <li><a href="{{ page.next.url }}">&laquo;&laquo;&laquo; Next : {{ page.next.title }}</a></li>
       {% endif %}
@@ -22,9 +14,12 @@ layout: default
       <li><a href="{{ page.previous.url }}">Previous : {{ page.previous.title }} &raquo;&raquo;&raquo;</a></li>
       {% endif %}
     </div>
-    {% include blog/disqus-comments.html %}
-  </div>
-
+    {% if page.comments %}
+    <!-- disquss -->
+    <hr class="sf-hr">
+    <div class="disqus">
+        <h3>Let's Disquss!!</h3>
+        {% include disqus.html %}
+    </div>
+    {% endif %}
 </div>
-
-{% include blog/header.html %}

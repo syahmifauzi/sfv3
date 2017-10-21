@@ -1,0 +1,12 @@
+.blogpost {
+    font-size: 1rem;
+    @include center-div(800px);
+    line-height: 1.5;
+    img {
+        width: 500px;
+    }
+    .bp-meta {
+        text-align: center;
+        font-weight: bold;
+    }
+}

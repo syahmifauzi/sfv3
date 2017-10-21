@@ -1,0 +1,29 @@
+#sf-footer {
+    color: $white-color;
+    background: $dark-gray-color;
+    font-size: .9rem;
+    padding: 0 1em;
+    font-family: $secondary-font;
+    text-align: center;
+    .sf-version {
+        padding-top: 30px;
+        a {
+            color: $white-color;
+            text-decoration: none;
+            border-bottom: 1px dotted #ccc;
+            &:hover {
+                border-color: transparent;
+            }
+        }
+    }
+    .sf-love {
+        padding-top: 20px;
+        span {
+            color: lighten($accent-color, 5%);
+        }
+    }
+    .sf-copy {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}

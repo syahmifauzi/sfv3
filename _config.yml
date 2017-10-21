@@ -1,22 +1,25 @@
 # Site settings
-title: SYAHMI FAUZI .COM @ SF
-email: brosyahmifauzi.gmail.com
-description: > # Multiline description..
+title: "@brosyhmi"
+author: Syahmi Fauzi
+email: brosyahmifauzi@gmail.com
+description: >-
   Syahmi is a self-taught front-end web developer
-  from Malaysia.. This is his personal website..
-  Also, a blog..
+  based in Malaysia..
+keywords: "syahmifauzi, syahmi, syhmi, brosyhmi, developer, freelance, responsive, frontend, portfolio, msf, msfaf, msfworks"
 
-# Uncomment 'baseurl' and 'url' when deploy..
-# baseurl: ""
 url: "http://www.syahmifauzi.com"
-local: "http://localhost:3000"
+permalink: /blog/:year/:month/:day/:title/
 
-facebook_username: syahmifauzi97
-instagram_username: _syahmifauzi
-twitter_username: _syahmifauzi
+repository: syahmifauzi/repo-name
 github_username: syahmifauzi
+twitter_username: brosyhmi
+facebook_username: brosyhmi
+instagram_username: brosyhmi
 
-# Build settings..
+# Build settings
 markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title/ # just pretty
-exclude: ["node_modules", "gulpfile.js", "package.json", "README.md", "offline.txt"]
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", "README.md", "offline.txt", "Gemfile", "Gemfile.lock"]

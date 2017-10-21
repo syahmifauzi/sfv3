@@ -1,0 +1,15 @@
+
+<header id="sf-header">
+  <div class="sf-brand"><span class="sf-socmed"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i></a><a href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i></a><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i></a></span>
+    <div class="sf-img"><a href="/"><img src="/assets/img/sf-img.jpg" alt="SF"/></a></div><span class="sf-socmed"><a href="https://github.com/{{ site.github_username }}" target="_blank"><i aria-hidden="true" class="fa fa-github"></i></a><a href="mailto:{{ site.email }}"><i aria-hidden="true" class="fa fa-envelope-o"></i></a><a href="https://my.linkedin.com/in/syahmi-fauzi-39b59710b" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i></a></span>
+    <div class="sf-author">Syahmi Fauzi</div>
+    <div class="sf-id">&commat;brosyhmi</div>
+  </div>
+  <div class="sf-nav">
+    <ul>
+      <li><a href="/" class="{% if page.url == '/' %}is-active{% endif %}">Portfolio</a></li>
+      <li><a href="/blog" class="{% if page.url contains '/blog/' %}is-active{% endif %}">Blog</a></li>
+      <li><a href="/about" class="{% if page.url == '/about/' %}is-active{% endif %}">About</a></li>
+    </ul>
+  </div>
+</header>
